@@ -1,0 +1,44 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Стили для кнопки "reset game" */
+.btn {
+  background-color: #4caf50; /* Зеленый фон */
+  color: white; /* Белый цвет текста */
+  padding: 10px 20px; /* Внутренние отступы */
+  margin: 20px 0; /* Внешние отступы */
+  border: none; /* Без границы */
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Курсор при наведении */
+  font-size: 16px; /* Размер шрифта */
+  transition: background-color 0.3s ease; /* Плавный переход фона */
+}
+
+.btn:hover {
+  background-color: #45a049; /* Темно-зеленый фон при наведении */
+}
+
+/* Стили для блока информации о победе или ничьей */
+.information {
+  font-size: 20px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  margin-top: 20px; /* Внешний отступ сверху */
+  color: #333; /* Цвет текста */
+  text-align: center; /* Выравнивание по центру */
+}
